@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body,html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'MabryPro';
+  src: url('./assets/MabryPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-mabry {
+  font-family: 'MabryPro', sans-serif;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('./assets/Graphik-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-graphik {
+  font-family: 'Graphik', sans-serif;
+}
+
+.swiper {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling for all anchor links */
+}
+
+
+/* Add this to your CSS file */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 0.3s, backdrop-filter 0.3s; /* Smooth transition */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Add this class for the scrolled effect */
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.5 ); /* Adjust the opacity when scrolled */
+}
+
+
+
+

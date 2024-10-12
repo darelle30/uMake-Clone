@@ -1,0 +1,30 @@
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.5s forwards;
+}
+
+/* Trigger animation when in viewport */
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+
+.color1 { 
+  background: linear-gradient(41.58deg, #5bc0d2 -2.97%, #437cf2 25.61%, #666cfd 48.53%, #a282d2 74.94%, #fcb3c1 99.16%);
+}
+
+
